@@ -1,0 +1,17 @@
+{
+  "title": "Product",
+  "fields": [
+    "id",
+    "business_case_id",
+    "product_family_id",
+    "name",
+    "problem_ids",
+    "target_group_ids",
+    "status",
+    "score",
+    "differentiation",
+    "supplier_status",
+    "landingpage_hypothesis",
+    "rationale"
+  ]
+}
