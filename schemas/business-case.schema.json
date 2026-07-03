@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BusinessCase",
+  "type": "object",
+  "required": ["id", "market_id", "title", "status", "score"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^BC-[0-9]{3,}$"},
+    "market_id": {"type": "string", "pattern": "^M-[0-9]{3,}$"},
+    "title": {"type": "string"},
+    "target_group_ids": {"type": "array", "items": {"type": "string"}},
+    "problem_ids": {"type": "array", "items": {"type": "string"}},
+    "product_family_ids": {"type": "array", "items": {"type": "string"}},
+    "status": {"type": "string"},
+    "score": {"type": "number", "minimum": 0, "maximum": 100},
+    "rationale": {"type": "string"},
+    "next_step": {"type": "string"}
+  }
+}
